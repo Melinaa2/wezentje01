@@ -91,3 +91,17 @@
 
     loop();
 })();
+
+(async () => {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+    const video = document.createElement("video");
+    video.autoplay = true;
+    video.playsInline = true;
+    video.srcObject = stream;
+    document.getElementById("webcam-container").appendChild(video);
+    console.log("Webcam werkt!");
+  } catch (err) {
+    console.error("Webcam niet beschikbaar:", err);
+  }
+})();
