@@ -5,18 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Konijn - Feed Me</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Teachable Machine library (zorg dat er internet is bij testen) -->
   <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
 </head>
 <body>
   <div class="page">
     <h1>Konijn</h1>
-
     <div id="app">
       <div id="webcam-container"></div>
-
       <div id="screen">
-        <div id="image-display"><!-- afbeelding wordt hier door script gezet --></div>
+        <div id="image-display"></div>
         <div id="overlay" class="show-start">
           <div id="start-card">
             <h2>Feed me!</h2>
@@ -28,11 +25,9 @@
           </div>
         </div>
       </div>
-
       <div id="status">Status: <span id="status-text">Wachten...</span></div>
     </div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
