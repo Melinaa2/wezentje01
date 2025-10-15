@@ -2,10 +2,11 @@
     const tmImageCheck = typeof tmImage !== "undefined";
     if (!tmImageCheck) { alert("Teachable Machine library niet geladen."); return; }
 
-    const URL = "https://melinaa2.github.io/wezentje01/";
+    const URL = "https://melinaa2.github.io/wezentje01/my_model/";
+
     const images = {
         "Start": "https://melinaa2.github.io/wezentje01/my_images/eyes_start.png",
-        "Neutral": "hhttps://melinaa2.github.io/wezentje01/my_images/eyes_neutral.png",
+        "Neutral": "https://melinaa2.github.io/wezentje01/my_images/eyes_neutral.png",
         "Happy": "https://melinaa2.github.io/wezentje01/my_images/eyes_happy.png",
         "Sad": "https://melinaa2.github.io/wezentje01/my_images/eyes_sad.png"
     };
