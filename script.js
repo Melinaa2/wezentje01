@@ -4,6 +4,7 @@
 
     const URL = "https://melinaa2.github.io/wezentje01/my_model/";
 
+
     const images = {
         "Start": "https://melinaa2.github.io/wezentje01/my_images/eyes_start.png",
         "Neutral": "https://melinaa2.github.io/wezentje01/my_images/eyes_neutral.png",
@@ -92,16 +93,3 @@
     loop();
 })();
 
-(async () => {
-  try {
-    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-    const video = document.createElement("video");
-    video.autoplay = true;
-    video.playsInline = true;
-    video.srcObject = stream;
-    document.getElementById("webcam-container").appendChild(video);
-    console.log("Webcam werkt!");
-  } catch (err) {
-    console.error("Webcam niet beschikbaar:", err);
-  }
-})();
