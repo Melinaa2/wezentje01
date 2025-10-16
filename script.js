@@ -12,6 +12,7 @@
     const URL = "https://melinaa2.github.io/wezentje01/my_model/";
 
 
+
     const images = {
         "Start": "https://melinaa2.github.io/wezentje01/my_images/eyes_start.png",
         "Neutral": "https://melinaa2.github.io/wezentje01/my_images/eyes_neutral.png",
