@@ -21,7 +21,7 @@
     };
 
     let model = null, webcam = null;
-    const bufferSize = 5, confidenceThreshold = 0.85, holdTime = 1000, displayHoldDuration = 3000, sadAfterMs = 60000;
+    const bufferSize = 5, confidenceThreshold = 0.5, holdTime = 1000, displayHoldDuration = 1000, sadAfterMs = 10000;
     const predictionBuffer = {};
     let currentDetectedClass = null, lastFedTime = Date.now(), lastDetectionTime = 0;
 
