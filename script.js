@@ -1,4 +1,11 @@
 (async () => {
+
+    document.querySelectorAll(".icon-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    alert("Je hebt geklikt op " + btn.dataset.class);
+  });
+});
+
     const tmImageCheck = typeof tmImage !== "undefined";
     if (!tmImageCheck) { alert("Teachable Machine library niet geladen."); return; }
 
